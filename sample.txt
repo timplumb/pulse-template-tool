@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hi! I'm Tarquin Farquhar and I like building web sites.</title>
+<meta name="viewport" content="width = device-width, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Pro 7.0.1">
+<link rel=stylesheet href="css/master1a.css">
+<link rel=stylesheet href="css/index.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 7]>
+<link rel=stylesheet href="css/ie6.css">
+<style type="text/css">
+#PageDiv { height:100% }
+#text-panel { height:694px }
+#photo.f-ms { height:73px }
+#text.f-ms { height:58px }
+.pageframe { display: none; }
+</style>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
+<style type="text/css"><!--
+.pageframe {
+    position: fixed;
+    background: #ffffff;
+    z-index: 999;
+    border: none;
+}
+.pfl, .pfr {
+	top: 0; bottom: 0;
+	width: 20px;
+	height: 100%;
+}
+.pfl { left: 0; }
+.pfr { right: 0; }
+.pft, .pfb {
+	left: 0; right: 0;
+	height: 20px;
+	min-width: 100%;
+}
+.pft { top: 0; }
+.pfb { bottom: 0; }
+--></style>
+</head>
+<body>
+<div class="pageframe pfl"></div>
+<div class="pageframe pfr"></div>
+<div class="pageframe pft"></div>
+<div class="pageframe pfb"></div>
+<div id="PageDiv">
+	<div id="page" class="f-ms">
+		<div id="text-panel" class="f-x2 pulse-pagecontent">
+			<div id="photo" class="f-ms f-x2 f-x3"></div>
+			<h1 class="style2 f-fp"><span class="firstName">Tarquin </span>Farquhar</h1>
+			<h2 class="style2">Web Designer &amp; Developer</h2>
+			<p>&nbsp;</p>
+			<h3 class="style2">About me</h3>
+			<p class="body"><span class="Intro">Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, egestas consequat.</span></p>
+			<p class="body">Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec purus convallis <a href="#">consequat</a>. Vivamus id mollis quam. In condimentum orci id nisl volutpat bibendum. Quisque commodo <a href="#">hendrerit</a> lorem quis egestas.</p>
+			<h3 class="style2">Work History</h3>
+			<p class="body">Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam <a href="#">vestibulum</a>, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+			<p class="body">Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices <a href="#">mauris</a>, eu consequat purus metus eu velit. Proin <a href="http://www.freewaystyle.com">metus odio</a>, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio.</p>
+			<p class="body f-lp"><a href="#"><img id="ukwda" class="f-ms f-x2 f-x3" src="Resources/ukwda.png" alt="ukwda"></a><a href="#"><img id="twitterlogo" class="f-ms f-x2 f-x3" src="Resources/twitter_logo.png" alt="twitterlogo"></a><a href="#"><img id="linkedinlogo" class="f-ms f-x2 f-x3" src="Resources/linkedin_logo.png" alt=""></a><a href="#"><img id="googlelogo" class="f-ms f-x2 f-x3" src="Resources/google_logo.png" alt=""></a><a href="#"><img id="dribbblelogo" class="f-ms f-x2 f-x3" src="Resources/dribbble_logo.png" alt=""></a>&nbsp;</p>
+		</div>
+		<div id="flash" class="corner-flash f-ms pulse-editable">
+			<div id="text" class="f-ms f-x2">
+				<p class="f-fp f-lp">Booking<br>work for<br>Summer 2015</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" class="pulse-editable">
+	/*
+		Random background colour changer with transitions
+	*/
+	//add the page colours here
+	var colours = ["#902a2f","#1e192d","#222d35","#27425b","#698a91","#466b3f","#592b1b","#c3141f","#305e99"];
+	//the time between colour changes
+	var interval = 5000;
+	
+	var body = document.getElementsByTagName("body")[0];
+	if (body){
+		var a = body.style;
+		a.webkitTransition = "background-color 2s ease";
+		a.khtmlTransition = "background-color 2s ease";
+		a.mozTransition = "background-color 2s ease";
+		a.oTransition = "background-color 2s ease";
+		a.msTransition = "background-color 2s ease";
+		a.transition = "background-color 2s ease";
+	}
+	function fwa_cc(){
+		if (!body){ return; }
+		var rndColour = colours[Math.floor(Math.random() * colours.length)];
+		a.backgroundColor = rndColour;
+		window.setTimeout(fwa_cc,interval);
+	}
+	fwa_cc();
+</script>
+</body>
+</html>
+
